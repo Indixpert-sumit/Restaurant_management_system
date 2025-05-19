@@ -40,7 +40,7 @@ class Billing:
 
         while True:
             order_item = input("\nEnter the item you want to order "
-            "= 1 for show bill ").strip()
+            "press= 1 for show bill ").strip()
             if order_item.lower() == "1":
                 break
             found = False
@@ -48,14 +48,14 @@ class Billing:
                 for item in items:
                     if item['item'].lower() == order_item.lower():
                         self.order.append(item)
-                        self.total+= ['price']
+                        self.total += item['price']
                         print(f"{item['item']} added to your order.")
                         found = True
                         break
                 if found:
                     break
             if not found:
-                print("Item not found in the menu. Please try again.")
+                print("Item not found in the menu")
 
     def display_bill(self):
         if self.order:
