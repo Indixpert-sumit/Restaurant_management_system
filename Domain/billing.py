@@ -29,26 +29,26 @@ menu = {
 
 class Billing:
     def __init__(self):
-        self.order = []
-        self.total = 0
+        self.order= []
+        self.total= 0
 
     def add_bill(self):
-        print("Menu:")
         for category, items in menu.items():
             print(f"\n{category}:")
             for item in items:
                 print(f"{item['item']} - ₹{item['price']}")
 
         while True:
-            order_item = input("\nEnter the item you want to order ( type done to show bill ): ").strip()
-            if order_item.lower() == 'done':
+            order_item = input("\nEnter the item you want to order "
+            "= 1 for show bill ").strip()
+            if order_item.lower() == "1":
                 break
             found = False
             for category, items in menu.items():
                 for item in items:
                     if item['item'].lower() == order_item.lower():
                         self.order.append(item)
-                        self.total += item['price']
+                        self.total+= ['price']
                         print(f"{item['item']} added to your order.")
                         found = True
                         break
