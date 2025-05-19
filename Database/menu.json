@@ -1,0 +1,26 @@
+{
+            "breakfast": [
+                {"item": "Pancakes", "price": 120},
+                {"item": "Omelette", "price": 100},
+                {"item": "Idli Sambhar", "price": 80},
+                {"item": "Paratha", "price": 90}
+            ],
+            "lunch": [
+                {"item": "Paneer Butter Masala", "price": 180},
+                {"item": "Chicken Biryani", "price": 200},
+                {"item": "Veg Thali", "price": 150},
+                {"item": "Dal Makhani", "price": 130}
+            ],
+            "dinner": [
+                {"item": "Butter Naan", "price": 40},
+                {"item": "Mutton Rogan Josh", "price": 220},
+                {"item": "Kadhai Paneer", "price": 170},
+                {"item": "Jeera Rice", "price": 90}
+            ],
+            "Water and Soft Drinks": [
+                {"item": "Mineral Water", "price": 20},
+                {"item": "Masala Chai", "price": 30},
+                {"item": "Lassi", "price": 50},
+                {"item": "Cold Drink", "price": 40}
+            ]
+        }
