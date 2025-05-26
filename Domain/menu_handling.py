@@ -31,9 +31,18 @@ class MenuItems:
                 {"item": "Cold Drink", "price": 40}
             ]
         }
-        def save_menu(self):
-            with open(path, 'w') as file:
-             json.dump(self.menu, file, indent=4)
+
+    def save_menu(self):
+        with open(path, 'w') as file:
+            json.dump(self.menu, file, indent=4)
+
+    # reading menu.json
+    def read_file(self): 
+        with open(path,"r") as file:
+            menu_data = json.loads(file)
+            return menu_data 
+        
+
     def print_menu(self):
             print("Menu")
             for category, items in self.menu.items():
